@@ -20,21 +20,25 @@
 }
 
 #main {
-  width: 80%;
+  width: 100%;
+  background-color: pink;
 }
 
 #nav {
-  width: 20%;
+  width: 100%;
+  height: 15vh;
   background-color: #4b4e6d;
 }
 
 #articles {
-  width: 60vw;
+  width: 100%;
+  height: 30vh;
   background-color: #6a8d92;
 }
 
 #ads {
-  width: 20vw;
+  width: 100%;
+  height: 15vh;
   background-color: #f2a541;
 }
 
@@ -42,4 +46,44 @@
   height: 20vh;
   width: 100vw;
   background-color: #f08a4b;
+}
+
+@media only screen and (min-width: 600px) {
+  #main {
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+  }
+  #articles, #ads {
+    height: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  #middle {
+    display: flex;
+  }
+  
+  #main {
+    height: 100%;
+    width: 80 vw;
+    /* height: 80%; */
+    display: flex;
+    /* flex-direction: row; */
+  }
+
+  #nav {
+    height: 100%;
+    width: 20%;
+  }
+
+  #ad {
+    height: 100%;
+    width: 20wh;
+  }
+#articles{
+    height: 100%;
+    
+  }
 }
